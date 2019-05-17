@@ -1,0 +1,369 @@
+
+<!DOCTYPE HTML>
+<html lang="" >
+    <head>
+        <meta charset="UTF-8">
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <title>d3box · GitBook</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 3.2.3">
+        
+        
+        
+    
+    <link rel="stylesheet" href="../../gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-highlight/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-search/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+
+        
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../../gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="../../gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    <link rel="next" href="buttons.html" />
+    
+    
+    <link rel="prev" href="simulator.html" />
+    
+
+    </head>
+    <body>
+        
+<div class="book">
+    <div class="book-summary">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="Type to search" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+
+    
+
+    
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="../../">
+            
+                <a href="../../">
+            
+                    
+                    项目介绍
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" data-path="../../">
+            
+                <a href="../../">
+            
+                    
+                    组件使用
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.2.1" data-path="simulator.html">
+            
+                <a href="simulator.html">
+            
+                    
+                    simulator
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter active" data-level="1.2.2" data-path="d3box.html">
+            
+                <a href="d3box.html">
+            
+                    
+                    d3box
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.3" data-path="buttons.html">
+            
+                <a href="buttons.html">
+            
+                    
+                    buttons
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.4" data-path="loading.html">
+            
+                <a href="loading.html">
+            
+                    
+                    loading
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.5" data-path="input.html">
+            
+                <a href="input.html">
+            
+                    
+                    input
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.6" data-path="bar.html">
+            
+                <a href="bar.html">
+            
+                    
+                    bar
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+            Published with GitBook
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href="../.." >d3box</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <h1 id="d3box">d3box</h1>
+<h2 id="options">Options</h2>
+<p><img src="https://raw.githubusercontent.com/lilu1814/images-repository/master/d3box.jpg" alt="image"></p>
+<h2 id="use">Use</h2>
+<pre><code class="lang-html"><span class="hljs-tag">&lt;<span class="hljs-name">dragenli-d3box</span> <span class="hljs-attr">:images</span>=<span class="hljs-string">&quot;images&quot;</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">dragenli-d3box</span>&gt;</span>
+</code></pre>
+<pre><code class="lang-jacascript">data() {
+    return {
+      images: [
+        &quot;https://timgsa.baidu.com/timg?image&amp;quality=80&amp;size=b9999_10000&amp;sec=1558012683761&amp;di=b5a058d2d77b7b68104aeb303da80dfe&amp;imgtype=0&amp;src=http%3A%2F%2Fe.hiphotos.baidu.com%2Fimage%2Fpic%2Fitem%2F4610b912c8fcc3cef70d70409845d688d53f20f7.jpg&quot;,
+        &quot;https://ss2.bdstatic.com/70cFvnSh_Q1YnxGkpoWK1HF6hhy/it/u=1653940556,109092186&amp;fm=26&amp;gp=0.jpg&quot;,
+        &quot;https://timgsa.baidu.com/timg?image&amp;quality=80&amp;size=b9999_10000&amp;sec=1558012737345&amp;di=d73b18159226f76a1662ff9c81670e8d&amp;imgtype=0&amp;src=http%3A%2F%2Fimg.pconline.com.cn%2Fimages%2Fupload%2Fupc%2Ftx%2Fsoftbbs%2F1108%2F15%2Fc0%2F8659502_1313415161208_1024x1024soft.jpg&quot;,
+        &quot;https://timgsa.baidu.com/timg?image&amp;quality=80&amp;size=b9999_10000&amp;sec=1558012737344&amp;di=5860c3d36d8273bc6ec4587cd3d915f1&amp;imgtype=0&amp;src=http%3A%2F%2Fpic1.win4000.com%2Fwallpaper%2F1%2F56937e29d9195.jpg&quot;,
+        &quot;https://timgsa.baidu.com/timg?image&amp;quality=80&amp;size=b9999_10000&amp;sec=1558012737341&amp;di=2fb40e92d978d7bb7f9619d2b62ca86a&amp;imgtype=0&amp;src=http%3A%2F%2Fattachments.gfan.com%2Fforum%2Fattachments2%2F201301%2F13%2F115216inifiii6ommims13.jpg&quot;,
+        &quot;https://timgsa.baidu.com/timg?image&amp;quality=80&amp;size=b9999_10000&amp;sec=1558012855007&amp;di=aa57729f310957cad53fd94f1b693c1c&amp;imgtype=0&amp;src=http%3A%2F%2Fb-ssl.duitang.com%2Fuploads%2Fitem%2F201206%2F11%2F20120611102540_CmsFM.jpeg&quot;,
+        &quot;https://timgsa.baidu.com/timg?image&amp;quality=80&amp;size=b9999_10000&amp;sec=1558012483075&amp;di=c23ca6adea94f0f485343f4e1e9dba98&amp;imgtype=0&amp;src=http%3A%2F%2Fgss0.baidu.com%2F-Po3dSag_xI4khGko9WTAnF6hhy%2Fzhidao%2Fpic%2Fitem%2F1f178a82b9014a90dd52ab60a8773912b21beefb.jpg&quot;,
+        &quot;https://timgsa.baidu.com/timg?image&amp;quality=80&amp;size=b9999_10000&amp;sec=1558012483073&amp;di=ba06c8cbd2f1ed6f548871f5dccfdf25&amp;imgtype=0&amp;src=http%3A%2F%2Fimg.mp.itc.cn%2Fupload%2F20170501%2Fbc3c3b974f464e5eb1ce8e70745adc06_th.jpeg&quot;,
+        &quot;https://timgsa.baidu.com/timg?image&amp;quality=80&amp;size=b9999_10000&amp;sec=1558012483073&amp;di=c449b607aa3cee5e991bae83b5a5b80d&amp;imgtype=0&amp;src=http%3A%2F%2Fpic6.58cdn.com.cn%2Fzhuanzh%2Fn_v2ad0a35b4b186468682623acffd008ba5.jpg%3Fw%3D750%26h%3D0&quot;,
+        &quot;https://timgsa.baidu.com/timg?image&amp;quality=80&amp;size=b9999_10000&amp;sec=1558012483071&amp;di=27c2a1a14b4ee7a22d317ac27dce6ef4&amp;imgtype=0&amp;src=http%3A%2F%2Fa3.att.hudong.com%2F48%2F48%2F01300542891816142078487846968.png&quot;,
+        &quot;https://timgsa.baidu.com/timg?image&amp;quality=80&amp;size=b9999_10000&amp;sec=1558012483070&amp;di=1bea4a7b3b59fd847747a91c3b39bd8b&amp;imgtype=0&amp;src=http%3A%2F%2Fbbs.qn.img-space.com%2F201802%2F3%2Feba466d977ba9a38c1a50dea7dd01afd.jpg%3FimageView2%2F2%2Fw%2F1024%2Fq%2F90%2Fignore-error%2F1%2F&quot;,
+        &quot;https://ss1.baidu.com/9vo3dSag_xI4khGko9WTAnF6hhy/image/h%3D300/sign=77d1cd475d43fbf2da2ca023807fca1e/9825bc315c6034a8ef5250cec5134954082376c9.jpg&quot;
+      ]
+    };
+</code></pre>
+<h3 id="props">Props</h3>
+<table>
+<thead>
+<tr>
+<th>Option</th>
+<th>Type</th>
+<th>Description</th>
+<th>Default</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>images</td>
+<td>Array</td>
+<td>url of box image</td>
+<td>[]</td>
+</tr>
+</tbody>
+</table>
+
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="simulator.html" class="navigation navigation-prev " aria-label="Previous page: simulator">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+                <a href="buttons.html" class="navigation navigation-next " aria-label="Next page: buttons">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"d3box","level":"1.2.2","depth":2,"next":{"title":"buttons","level":"1.2.3","depth":2,"path":"doc/use/buttons.md","ref":"doc/use/buttons.md","articles":[]},"previous":{"title":"simulator","level":"1.2.1","depth":2,"path":"doc/use/simulator.md","ref":"doc/use/simulator.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":[],"pluginsConfig":{"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"doc/use/d3box.md","mtime":"2019-05-17T07:33:49.419Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2019-05-17T07:57:25.239Z"},"basePath":"../..","book":{"language":""}});
+        });
+    </script>
+</div>
+
+        
+    <script src="../../gitbook/gitbook.js"></script>
+    <script src="../../gitbook/theme.js"></script>
+    
+        
+        <script src="../../gitbook/gitbook-plugin-search/search-engine.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-search/search.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-lunr/lunr.min.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-lunr/search-lunr.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-sharing/buttons.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+
+    </body>
+</html>
+
